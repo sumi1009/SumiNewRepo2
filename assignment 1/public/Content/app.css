@@ -1,0 +1,31 @@
+/*app.css,Sumi Lee,301088176,2022/02/05*/
+
+body {
+    font-size: 16px;
+    background: #fafafa;
+  }
+  
+  h1 {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1 {
+    color: #777;
+    font-size: 2.5rem;
+  }
+
+  .text-light {
+    color: #666;
+  }
+  
+
+  .title-bar {
+    background: #31b6bb;
+  }
+  
+  .title-bar-title {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 50px;
+  }

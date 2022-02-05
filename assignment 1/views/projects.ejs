@@ -1,0 +1,52 @@
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+
+<main class= "container">
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome to the  <%= title %> page </h1>
+      <table>
+        <tr><img src="logo.png" height = "200px"/></tr>
+        <tr>
+            <td><a href="index.html">Home</a></td>
+            <td><a href="aboutme.html">About me</a></td>
+            <td><a href="projects.html">Projects</a></td>
+            <td><a href="services.html">Services</a></td>
+            <td><a href="contact.html">Contact Me</a></td>
+        </tr>
+    </table>
+    <div style="padding-top: 40px;">
+        <h2>Projects</h2>
+        <table>
+            <tr>
+                <td><img src="project1.jpg" height="100px"></td>
+                <td>
+                    <strong>Create a web page</strong><br>
+                    I created a web page introducing the iPhone series.<br>
+                    If you click on the iPhone name, you can go to the Apple website that introduces the iPhone series.<br>
+                    I added a function to see more pictures.
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="project2.jpg" height="100px"></td>
+                <td>
+                    <strong>Calculator</strong><br>
+                    I created a program with the ability to calculate simple numbers such as addition, subtraction, division, and multiplication.
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="project3.jpg" height="100px"></td>
+                <td>
+                    <strong>Foud the source of the error</strong><br>
+                    When an error occurs in the software, the contents of developing a program that finds where the error occurred were documented.
+                    <br>
+                </td>
+            </tr>
+        </table>
+      <script src="app.js"></script>
+    </div>
+</main>      
+
+<%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %>

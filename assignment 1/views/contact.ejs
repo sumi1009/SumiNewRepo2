@@ -1,0 +1,42 @@
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+
+<main class= "container">
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome to the  <%= title %> page </h1>
+      <table>
+        <tr><img src="logo.png" height = "200px"/></tr>
+        <tr>
+            <td><a href="index.html">Home</a></td>
+            <td><a href="aboutme.html">About me</a></td>
+            <td><a href="projects.html">Projects</a></td>
+            <td><a href="services.html">Services</a></td>
+            <td><a href="contact.html">Contact Me</a></td>
+        </tr>
+    </table>
+    <div style="padding-top: 40px;">
+        <h2>Contact Me</h2>
+        <table>
+            <tr>
+                <td>Name : </td>
+                <td>Sumi Lee</td>
+            </tr>
+            <tr>
+                <td>Contact Number</td>
+                <td>( +416 ) 123 4567</td>
+            </tr>
+            <tr>
+                <td>Facebook id : </td>
+                <td>samplefacebookid</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>sumi@gmail.com</td>
+            </tr>
+        </table>
+      <script src="app.js"></script>
+    </div>
+</main>      
+
+<%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %>

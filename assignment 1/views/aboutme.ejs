@@ -1,0 +1,45 @@
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+
+<main class= "container">
+    <div class="jumbotron">
+      <h1 class="display-4">Welcome to the  <%= title %> page </h1>
+      <table>
+        <tr><img src="logo.png" height = "200px"/></tr>
+        <tr>
+            <td><a href="index.html">Home</a></td>
+            <td><a href="aboutme.html">About me</a></td>
+            <td><a href="projects.html">Projects</a></td>
+            <td><a href="services.html">Services</a></td>
+            <td><a href="contact.html">Contact Me</a></td>
+        </tr>
+    </table>
+    <div style="padding-top: 40px;">
+        <h2>About me</h2>
+        <img src="photo.jpeg" height = "100px"/>
+        <table>
+            <tr> 
+                <td>Name: </td>
+                <td>Sumi Lee</td>
+            </tr>
+            <tr> 
+                <td valign="top">About me: </td>
+                <td>
+                    My name is Sumi Lee and I'm from South Korea. I'm attending Centennial College in Canada, and I'm studying computer.<br>
+                    I'm always bright and positive, and I do my best in everything.
+                    I can work with someone as well, adapt quickly to what I do even if the work is the first time, and do my job well.<br>
+                    I like to watching movies and go to travel somewhere with someone.<br>
+                    In the future, I really want to work at Diseny or Google, or some large company.
+                </td>
+            </tr>
+            <tr> 
+                <td>Resume: </td>
+                <td><a href="resume.pdf">Click Here</a></td>
+            </tr>
+        </table>
+        <script src="app.js"></script>
+    </div>
+</main>      
+
+<%- include partials/bottom_nav.ejs %>
+<%- include partials/footer.ejs %>

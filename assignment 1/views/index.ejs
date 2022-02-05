@@ -1,0 +1,36 @@
+<%- include partials/header.ejs %>
+<%- include partials/main_nav.ejs %>
+   
+<!--main content -->>
+    <main class= "container">
+      <div class="jumbotron">
+        <h1 class="display-4">Welcome to the  <%= title %> page </h1>
+       
+      </div>
+      <table>
+        <tr><img src="images/logo.png" height = "200px"/></tr>
+        <tr>
+            <td><a href="/index.ejs">Home</a></td>
+            <td><a href="/aboutme.ejs">About me</a></td>
+            <td><a href="/projects.html">Projects</a></td>
+            <td><a href="/services.html">Services</a></td>
+            <td><a href="/contact.html">Contact Me</a></td>
+        </tr>
+      </table>
+      <div style="padding-top: 40px;">
+          Hello, everyone. Welcome to visit my personal homepage. <br>
+          <br>
+          I'm glad to visit my homepage and happy to let you know about me. 
+          You can visit <a href="aboutme.html">click here</a> here to know about me. 
+          <br><br>
+          <strong>Mission Statement</strong> <br>
+          I'm studying computer in Centennial College in Canada.<br>
+          I want to work for Disney, Google, or a large company later.
+      </div>
+      <script src="app.js"></script>
+      
+    </main>
+    
+   
+    <%- include partials/bottom_nav.ejs %>
+    <%- include partials/footer.ejs %>
