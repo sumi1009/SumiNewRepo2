@@ -1,0 +1,52 @@
+<!--section 005-->
+% include ../partials/header.ejs %>
+
+<!--These parts are for Business contacts when login successed-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-1 col-md-10">
+            <div class="row">
+                <div class="col-md-12 text-center"><h1>Business Contacts List</h1></div>
+            </div>
+            <div class="table-responsive well">
+                <table class="table table-bordered table-striped table-hover">
+                    <thead>
+                    <tr>
+                        <th class="text-center">Contact Name</th>
+                        <th class="text-center">Contact Number</th>
+                        <th class="text-center">Email Address</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <% for (let count = 0; count < BusinessContacts.length; count++) { %>
+                    <tr>
+                        <td class="text-center"><%= BusinessContacts[count].contactName %></td>
+                        <td class="text-center"><%= BusinessContacts[count].contactNumber %></td>
+                        <td class="text-center"><%= BusinessContacts[count].emailaddress %></td>
+                        <td class="text-center">
+                            <a href="/BusinessContacts/<%= BusinessContacts[count]._id %>" class="btn btn-primary">
+                                <i class="fa fa-pencil-square-o"></i>
+                                Update
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a href="/BusinessContacts/delete/<%= BusinessContacts[count]._id %>"
+                               class="btn btn-danger">
+                                <i class="fa fa-trash-o"></i>
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                    <% } %>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-md-offset-1 col-md-10 text-center">
+                <ul class="pagination pagination-lg pager" id="myPager"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% include ../partials/footer.ejs %>

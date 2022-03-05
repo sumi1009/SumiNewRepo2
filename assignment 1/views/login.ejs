@@ -1,0 +1,47 @@
+<!--section 005-->
+
+
+<%- include('../partials/header.ejs') -%>
+
+<main class="container">
+    <% if(messages.length > 0) { %>
+    <div class="alert danger">
+        <%= messages %>
+    </div>}
+    <%}%>
+    <!--These parts are for Login page-->
+    <div class="row">
+        <h1>Login</h1>
+
+        <form method="Post">
+
+            <fieldset class="form group">
+                <label for="username"> Username : </label>
+                <input type="Text" class="Form control" id="username" name="username" placeholder="Enter username" required autofocus>
+            </fieldset>
+
+            <fieldset class="form group">
+                <label for="password"> Password :</label>
+                <input type="password" class="Form Control" id="password" name="password" placeholder="Enter password" required autofocus>
+            </fieldset>
+<section id="section">
+            <div class="input-box">
+                <input type="text" placeholder="user name, password,or email address" class="input-box_login">
+                <input type="text" placeholder="password" class="input-box_password">
+                <button class="btnon off-button">Login</button>
+                <a id="footer_link" href="">Forget your password?</a>
+            </div>
+
+            <c:if test="$(member != null)">
+                <div class="Login_success_area">
+                    <a href="Business Contacts List.ejs"></a>
+                </div>
+            </c:if>
+
+            <c:if test="${member == null">
+                <div class="Login_button"><a href="login.ejs">Login</a></div>
+
+            </c:if>
+        </section>
+        </form>
+    </div>

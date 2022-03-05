@@ -1,4 +1,5 @@
-/*app.css,Sumi Lee,301088176,2022/02/05*/
+/* assignment 2, Sumi Lee, 301088176, 2022-03-05*/
+
 
 body {
     font-size: 16px;
@@ -18,7 +19,23 @@ body {
     color: #666;
   }
   
-
+  /*section 005*/
+  btnon {
+    height: 65px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #2f95f6;
+    color: white;
+  }
+  /*section 005*/
+  off-button {
+    cursor: not-allowed;
+    background-color: #c4e1fb;
+  }
+  /*section 005*/
   .title-bar {
     background: #31b6bb;
   }

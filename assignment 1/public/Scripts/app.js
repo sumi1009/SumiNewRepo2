@@ -1,4 +1,5 @@
 /*app.css,Sumi Lee,301088176,2022/02/05*/
+
 //IIFE - Immediately Invoked Function Expression
 (function(){
 
@@ -10,6 +11,17 @@ function Start(){
 window.addEventListener("load", Start );
 })();
 
+//installed required packages
+let createError = requir('http-errors');
+let express = require('expree');
+let path = require('path');
+let cookieParser = require('cookie-parser');
+let logger = require('morgan');
+
+//moduel for messaging and error message
+let flash = require('connect-flash');
+let indexRouter = require('../routes/index');
+let userstRouter = require('../routes/users');
 
 // bring module
 var express = require('express')
